@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+
+
+</head>
+<body style="background-color: #269abc;">
+
+<div class="container">
+    <div class="row" id="step1">
+        <div class="col-md-5 col-md-offset-4">
+            <h3 style="color:#23527c;">Personal Data</h3>
+            <input type="text" placeholder="Email ID"/><br/><input type="text" placeholder="Full Name"/><br/><input type="text"
+                                                                                                             placeholder="Date of Birth"/><br/><input
+                type="text" placeholder="Contact Number"/><br/><input type="text" placeholder="Residential Address"/><br/>
+            <input type="text" placeholder="personal website link"/><br/>
+
+            <input type="submit" class="btn btn-success" value="Save and Continue"  id="stp1-btn"/>
+
+
+        </div>
+    </div>
+    <div class="row" id="step2">
+        <div class="col-md-5 col-md-offset-4">
+            <h3 style="color:#23527c;">Technical</h3>
+            <input type="text" placeholder="Email ID"/><br/><input type="text" placeholder="Full Name"/><br/><input type="text"
+                                                                                                                    placeholder="Date of Birth"/><br/><input
+                type="text" placeholder="Contact Number"/><br/><input type="text" placeholder="Residential Address"/><br/>
+            <input type="text" placeholder="personal website link"/><br/>
+
+            <input type="submit" class="btn btn-success" value="Save and Continue" id="stp2-btn"/>
+
+
+        </div>
+    </div>
+    <div class="row" id="step3">
+        <div class="col-md-5 col-md-offset-4">
+            <h3 style="color:#23527c;">Experience</h3>
+            <input type="text" placeholder="Email ID"/><br/><input type="text" placeholder="Full Name"/><br/><input type="text"
+                                                                                                                    placeholder="Date of Birth"/><br/><input
+                type="text" placeholder="Contact Number"/><br/><input type="text" placeholder="Residential Address"/><br/>
+            <input type="text" placeholder="personal website link"/><br/>
+
+            <input type="submit" class="btn btn-success" value="Save and Continue"/>
+
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script>
+
+    $(document).ready(function(){
+
+        $('#stp1-btn').click(function(){
+            $('#step1').hide();
+            $('#stpe3').hide();
+            $("#step2").show();
+        });
+        $('#stp2-btn').click(function(){
+            $('#stpe2').hide();
+            $("#step3").show();
+        });
+
+    })
+
+
+
+</script>
+
+
+</html>
